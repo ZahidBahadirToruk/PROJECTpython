@@ -4,5 +4,5 @@
 ### Things to do
 * ~~create the programe~~
 * calculate points at the end of the game
-* use "for" loop instead of "if's"
+* use "list" instead of "if's" 
 * 
