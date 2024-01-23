@@ -5,4 +5,4 @@
 * ~~create the programe~~
 * calculate points at the end of the game
 * use "list" instead of "if's" 
-* 
+* maybe try using diccionnary
