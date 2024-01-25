@@ -1,44 +1,25 @@
-q1 = 'What is the capital of France ?'
-a1 = input(q1)
-point = 0
-if a1 == 'Paris':
-  print('Correct answer')
-  point = point + 1
-  print('points:', point)
-else:
-  print('Wrong answer')
-  point = point - 1
-  print('points:', point)
+class Quiz:
+    def __init__(self):
+        self.point = 0
 
-q2 = 'When did the WW2 ended ?'
-a2 = input(q2)
-if a2 == '1945':
-  print('Correct answer')
-  point = point + 1
-  print('points:', point)
-else:
-  print('Wrong answer')
-  point = point - 1
-  print('points:', point)
+    def ask_question(self, question, correct_answer):
+        user_answer = input(question)
+        if user_answer == correct_answer:
+            print('Correct answer')
+            self.point += 1
+            print('Points:', self.point)
+        else:
+            print('Wrong answer')
+            self.point -= 1
+            print('Points:', self.point)
 
-q3 = 'Which is the largest country in the world ?'
-a3 = input(q3)
-if a3 == 'Russia':
-  print('Correct answer')
-  point = point + 1
-  print('points:', point)
-else:
-  print('Wrong answer')
-  point = point - 1
-  print('points;', point)
+if __name__ == "__main__":
+    quiz = Quiz()
 
-q4 = 'In which country would you find the Leaning Tower of Pisa ?'
-a4 = input(q4)
-if a4 == 'Italy':
-  print('Correct answer')
-  point = point + 1
-  print('points:', point)
-else:
-  print('Wrong answer')
-  point = point - 1
-  print('points;', point)
+    quiz.ask_question('What is the capital of France?', 'Paris')
+    quiz.ask_question('When did World War II end?', '1945')
+    quiz.ask_question('Which is the largest country in the world?', 'Russia')
+    quiz.ask_question('In which country would you find the Leaning Tower of Pisa?', 'Italy')
+    quiz.ask_question('What is the currency of Japan?', 'Yen')
+    quiz.ask_question('Who wrote the play "Romeo and Juliet"?', 'William Shakespeare')
+    quiz.ask_question('What is the largest ocean on Earth?', 'Pacific')
