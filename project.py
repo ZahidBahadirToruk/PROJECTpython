@@ -23,3 +23,10 @@ if __name__ == "__main__":
     quiz.ask_question('What is the currency of Japan?', 'Yen')
     quiz.ask_question('Who wrote the play "Romeo and Juliet"?', 'William Shakespeare')
     quiz.ask_question('What is the largest ocean on Earth?', 'Pacific')
+
+    if quiz.point > 3:
+        print('Congratulations! You scored', quiz.point, 'points. Well done!')
+    elif quiz.point < 0:
+        print('Try again. Your score is', quiz.point, '. Better luck next time!')
+    else:
+        print('Your final score is', quiz.point, '. Good effort!')
